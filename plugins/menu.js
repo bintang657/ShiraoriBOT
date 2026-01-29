@@ -23,7 +23,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
-    'ilman': 'ilman',
+    'starkimjong': 'starkimjong',
     'game': 'Game',
     'rpg': `Rpg ${global.opts['restrict'] ? '' : '(perbaikan)'}`,
     'jadian': 'Jadian',
@@ -52,8 +52,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'info': 'Info',
     '': 'Tanpa Kategori',
   }
-  if (teks == 'ilman') tags = {
-    'ilman': 'ilman'
+  if (teks == 'starkimjong') tags = {
+    'starkimjong': 'starkimjong'
   }
   if (teks == 'game') tags = {
     'game': 'Game'
